@@ -1,0 +1,49 @@
+.related-products{
+  margin-top: 60px;
+  margin-bottom: 80px;
+  .slick-arrow{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid $green;
+    background-color: white;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    &::after{
+      content: '\e900';
+      font-size: 17px;
+      color: $green;
+      @include icon;
+      transition: color .1s;
+    }
+    &:hover{
+      background-color: $green;
+      &::after{
+        color: white;
+      }
+    }
+    &.slick-prev{
+      left: 0;
+      &::after{
+        transform: scaleX(-1);
+      }
+    }
+    &.slick-next{
+      right: 0;
+    }
+  }
+  .products-slider{
+    .product-card{
+      .rent-submit{
+        display: none;
+      }
+    }
+  }
+}

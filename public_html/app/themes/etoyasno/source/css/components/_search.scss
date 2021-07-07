@@ -1,0 +1,62 @@
+.form-search{
+  position: relative;
+  &.small{
+    input[type="search"]{
+      height: 45px;
+      line-height: 45px;
+      width: 380px;
+      font-size: 14px;
+    }
+    input[type="submit"]{
+      width: 37px;
+      height: 37px;
+    }
+  }
+  input[type="search"]{
+    height: 55px;
+    line-height: 55px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    padding: 10px 60px;
+    background: url('../img/svg/header/loop-icon.svg') no-repeat 20px 50%;
+    width: 430px;
+    transition: .1s border-color;
+    &:focus{
+      border-color: $green;
+      transition: .3s border-color;
+      & + input[type="submit"]{
+        visibility: visible;
+        opacity: 1;
+        transition: 0s visibility, .3s opacity;
+      }
+    }
+    &:not([value=""]):not(:focus){
+      & + input[type="submit"]{
+        visibility: visible;
+        opacity: 1;
+        transition: 0s visibility, .3s opacity;
+      }
+    }
+  }
+  input[type="submit"]{
+    visibility: hidden;
+    opacity: 0;
+    width: 47px;
+    height: 47px;
+    background: url('../img/svg/header/arrow-big-icon.svg') $green no-repeat 50%;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: 0s visibility, .1s opacity;
+    &:hover {
+      background-color: lighten($green, 10%);
+    }
+    &:active {
+      background-color: darken($green, 8%);
+    }
+  }
+}

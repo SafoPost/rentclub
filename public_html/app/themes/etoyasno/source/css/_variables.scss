@@ -1,0 +1,35 @@
+// fonts
+$font-f: "SFUIDisplay", sans-serif;
+$font-s: 14px;
+$m-font-s: 16px;
+
+$md-max: 1270px;
+$sm-max: 767px;
+
+//color
+$coral:  #FD7C60;
+$orange: #FFAD05;
+$green: #1A8B32;
+$l-green: #F3FFF8;
+$blue: #42A6DF;
+$l-blue: #56CCF2;
+
+$black: #282828;
+$gray: #BDBDBD;
+$m-gray: #E0E0E0;
+$m-gray2: #E4E4E4;
+$l-gray: #F2F3F5;
+$white: #ffff;
+// media
+$small-desktop: 1240px;
+$tablet: 1000px;
+$big-mobile: 768px;
+$small-mobile: 480px;
+$extra-small: 350px;
+
+//specific
+$radius: 10px;
+
+:root {
+  --cut-number: 0;
+}

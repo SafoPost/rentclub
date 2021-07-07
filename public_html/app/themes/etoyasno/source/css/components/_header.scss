@@ -1,0 +1,113 @@
+#header {
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #E0E0E0;
+    .h-logo{
+      margin-right: 35px;
+      .logo{
+        display: block;
+        img{
+          vertical-align: top;
+          max-width: 132px;
+        }
+      }
+    }
+    .h-city{
+      .city-title{
+        @include size-regular(small);
+        color: $green;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &::before{
+          content: '';
+          max-width: 14px;
+          flex: 0 0 14px;
+          height: 16px;
+          background: url('../img/svg/header/geo-icon.svg');
+          margin-right: 10px;
+        }
+      }
+      .city{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        @include size-regular(medium);
+        margin-left: 24px;
+        &:hover{
+          border-bottom: 1px dashed $black;
+        }
+      }
+    }
+    .h-search{
+      margin: 0 auto;
+    }
+    .h-panel{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: 35px;
+      .cart{
+        .cart-btn{
+          display: block;
+          border: 0;
+          padding: 0;
+          width: 22px;
+          height: 19px;
+          background: url('../img/svg/header/cart-icon.svg');
+        }
+      }
+      .user{
+        display: flex;
+        margin-left: 10px;
+        .user-btn{
+          border: 0;
+          padding: 0;
+          width: 22px;
+          height: 22px;
+          background: url('../img/svg/header/user-icon.svg');
+        }
+        .user-menu{
+          display: none;
+        }
+      }
+      .h-panel-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      [data-count]{
+        position: relative;
+        &::before {
+          content: attr(data-count);
+          font-size: 12px;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-color: $coral;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .header-bottom{
+    padding: 15px 0;
+    .header-menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

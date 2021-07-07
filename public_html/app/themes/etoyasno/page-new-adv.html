@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="source/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <form action="" class="form-test">
+        <div class="form-group">
+
+            <div class="form-input">
+                <div class="form-title">Название объявления:*</div>
+                <label for="">
+                    <input type="text" class="input required" placeholder="Жумар Black Diamond">
+                </label>
+                <span class="error"></span>
+            </div>
+            <div class="input-prompt">Например: "Жумар Black Diamond" или "Жумар Правый Petzl"</div>
+        </div>
+        <div class="form-group">
+
+            <div class="form-input">
+                <div class="form-title">
+                    Описание объявления:*
+                    <span>Запрещается давать ссылки, указывать адреса эл.почты, адрес, телефон, цену, предлагать услуги.</span>
+                </div>
+                <label for="">
+                    <textarea name="" class="textarea" id="" placeholder="Очень хорошая вещь"></textarea>
+                </label>
+                <span class="error"></span>
+            </div>
+            <div class="input-prompt">Опишите достоинства этой вещи, почему ее нужно взять в аренду?<br> Чем она хороша?</div>
+        </div>
+        <div class="form-group">
+            <div class="form-input">
+                <div class="form-title">Количетсво:</div>
+                <label for="">
+                    <input type="number" class="input input-bg">
+                </label>
+                <span class="error"></span>
+            </div>
+            <div class="input-prompt">Укажите количетсво товара, имеюшиеся в наличии</div>
+        </div>
+        <div class="form-group">
+
+            <div class="form-input">
+                <div class="form-title">Укажите стоимость:*</div>
+                <label for="">
+                    <input type="number" class="input input-bg">
+                    <span class="input-placeholder">Цена в рублях</span>
+                </label>
+                <span class="error"></span>
+            </div>
+            <div class="input-prompt">Укажите количетсво товара, имеюшиеся в наличии</div>
+        </div>
+        <div class="form-group">
+            <div class="form-input">
+                <div class="form-title">
+                    Фотографии:
+                    <span>Не более 10</span>
+                </div>
+                <label for="">
+                    <input type="file" class="input-file input-photo">
+                </label>
+            </div>
+            <div class="input-prompt">Больше красивых фото-больше внимания к объявленю.</div>
+        </div>
+        <div class="form-group">
+
+            <div class="form-input">
+                <div class="form-title">Бренд:</div>
+                <label for="">
+                    <select id="input-select" class="input select-input input-bg">
+                        <option value="">Item 1</option>
+                        <option value="">Item 2</option>
+                        <option value="">Item 3</option>
+                    </select>
+                    <span class="error"></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-input">
+                <div class="form-title">Бренд:</div>
+                <label for="">
+                    <input type="checkbox" class="input input-color" style="background-color: gray">
+                    <input type="checkbox" class="input input-color" style="background-color: darkred">
+                    <input type="checkbox" class="input input-color" style="background-color: orangered">
+                    <input type="checkbox" class="input input-color" style="background-color: yellow">
+                    <span class="error"></span>
+                </label>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

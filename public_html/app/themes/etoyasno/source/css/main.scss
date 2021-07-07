@@ -1,0 +1,28 @@
+@import "_fonts.scss";
+
+@import "../libs/normalize/normalize.css";
+
+@import "_variables.scss";
+@import "_mixin.scss";
+@import "_global.scss";
+
+@import "components/_slick-theme.scss";
+@import "components/_btns.scss";
+@import "components/_header.scss";
+@import "components/_footer.scss";
+@import "components/_product-card.scss";
+@import "components/_related_products.scss";
+@import "components/_pagination.scss";
+@import "components/_seo-block.scss";
+@import "components/_modal.scss";
+@import "components/_inputs.scss";
+@import "components/_search.scss";
+
+@import "pages/_single-product.scss";
+@import "pages/_front.scss";
+@import "pages/_catalog.scss";
+@import "pages/_profile.scss";
+@import "pages/_new-add.scss";
+@import "pages/_ads.scss";
+@import "pages/_orders.scss";
+@import "pages/_cashout.scss";

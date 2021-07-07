@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="cart-style.css">
+
+    <title>Rent Club</title>
+</head>
+<body>
+
+
+<!--<header id="header">-->
+<!--    <div class="wrapper">-->
+<!--        <div class="header-top">-->
+<!--            <div class="h-logo">-->
+<!--                <img src="img/svg/logo.svg" alt="company logo">-->
+<!--            </div>-->
+<!--            <div class="h-city">-->
+<!--                <div class="title">Ваш город:</div>-->
+<!--                <button class="city">Екатеринбург</button>-->
+<!--            </div>-->
+<!--            <div class="h-search">-->
+<!--                <form action="" method="post" class="form-search">-->
+<!--                    <input type="search" name="h-search" placeholder="Камера Canon 6D">-->
+<!--                </form>-->
+<!--            </div>-->
+<!--            <a href="#" class="btn green h-rent-link">Сдать в аренду <span>+</span></a>-->
+<!--            <div class="h-panel">-->
+<!--                <div class="h-panel-button cart" data-count="3">-->
+<!--                    <a href="#" class="cart-btn"></a>-->
+<!--                </div>-->
+<!--                <div class="h-panel-button user" data-count="1">-->
+<!--                    <button class="user-btn"></button>-->
+<!--                    <ul class="user-menu">-->
+<!--                        <li><a href="">Мои заказы</a></li>-->
+<!--                        <li><a href="">Мой профиль</a></li>-->
+<!--                        <li><a href="">Мои объявления</a></li>-->
+<!--                        <li><a href="">Уведомления</a></li>-->
+<!--                        <li><a href="">Выйти</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<div class="breadcrumbs">-->
+<!--    <div class="wrapper">-->
+<!--        <nav id="breadcrumbs">-->
+<!--            <span><span>-->
+<!--                <a href="http://rentclub-it.etoyasno.beget.tech/">Главная</a> &gt; <span class="breadcrumb_last" aria-current="page">Корзина</span>-->
+<!--            </span></span>-->
+<!--        </nav>        -->
+<!--    </div>-->
+<!--</div>-->
+
+<!--header-->
+<!--breadcrumbs-->
+
+<main class="page-cart">
+    <div class="wrapper">
+        <section class="cart-section">
+            <div class="cart-title">
+                <h1 class="quadrate green size-h2">Корзина</h1>
+
+                <!--cart-steps-block-->
+                <div class="step-group">
+                    <span class="step-item current"><span class="step-num"><span>1</span></span>Формирование заказа</span>
+                    <span class="step-item"><span class="step-num"><span>2</span></span>Оплата заказа</span>
+                    <span class="step-item"><span class="step-num"><span>3</span></span>Паспортные данные</span>
+                </div>
+                <!--end cart-steps-block-->
+            </div>
+        
+            <div class="page-cart-block" id="cart-step-1">
+                <!--order-table-->
+                <table class="order-table">
+                    <tr>
+                        <th class="grid-head"><span>Фотография</span></th>
+                        <th class="grid-head"><span>Наименование</span></th>
+                        <th class="grid-head"><span>Даты</span></th>
+                        <th class="grid-head"><span>Количество</span></th>
+                        <th class="grid-head"><span>Цена</span></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="order-photo" style="background-image: url();"></div>
+                        </td>
+                        <td>
+                            <div class="order-description">
+                                <span>Аренда детского автокресла Britax Romer Advansafix IV Rдо 36 кг от 0,9 до 12 лет</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="order-rent-term">
+                                <span class="text size-14 green">Начало аренды:</span>
+                                <span class="text">22.04 (Сб)</span>
+                                <div class="dashed-line"></div>
+                                <span class="text size-14 green">Окончание аренды:</span>
+                                <span  class="text">26.04 (Вт)</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" value="1">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="order-cost">
+                                <div class="flex-block column">
+                                    <span class="text bold-24">2800₽</span>
+                                    <span class="text bold-16">700₽ <span class="text bold-16 green">/ сутки</span></span>
+                                </div>
+                                <a href="#" class="btn delete"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--end order-table-->
+
+                <div class="cart-form-wrapper">
+                    <!--order-data-form-->
+                    <form method="post" action="" class="cart-form">
+                        <div class="form-group">
+                            <h4 class="title size-18"><span class="num">1.</span>Ваши контактные данные</h4>
+                            <div class="field-group width-s form-floating">
+                                <input class="form-control" type="text" id="contact-details-surname" name="" placeholder="Фамилия*">
+                                <label for="contact-details-surname">Ваша фамилия</label>
+                            </div>
+                            <div class="field-group width-s form-floating">
+                                <input class="form-control" type="text" id="contact-details-name" name="contact-details-name" placeholder="Имя*">
+                                <label for="contact-details-name">Ваше имя</label>
+                            </div>
+                            <div class="field-group width-s form-floating">
+                                <input class="form-control" type="text" id="contact-details-patronymic" name="contact-details-patronymic" placeholder="Отчество*">
+                                <label for="contact-details-patronymic">Ваше отчество</label>
+                            </div>
+                            <div class="field-group width-m form-floating">
+                                <input class="form-control" type="text" id="contact-details-phone" name="contact-details-phone" placeholder="Телефон*">
+                                <label for="contact-details-phone">Ваш телефон</label>
+                            </div>
+                            <div class="field-group width-l form-floating">
+                                <input class="form-control" type="text" id="contact-details-email" name="contact-details-email" placeholder="Email">
+                                <label for="contact-details-email">Ваш email</label>
+                            </div>
+                            <span class="text size-12">* - поле обязательно к заполнению</span>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 class="title size-18"><span class="num">2.</span>Выберите способ доставки</h4>
+                            <div class="field-group">
+                                <input class="field-radio" type="radio" id="delivery-method1" name="delivery-method">
+                                <label for="delivery-method1" class="field-radio-label">Самовывоз</label>
+                            </div>
+                            <div class="field-group">
+                                <input class="field-radio" type="radio" id="delivery-method2" name="delivery-method">
+                                <label for="delivery-method2" class="field-radio-label">Доставкой курьером</label>
+                            </div>
+                            <div class="field-group width-l" style="display: none;">
+                                <input class="form-control height-55" type="text" name="">
+                            </div>
+                            <div class="field-group width-m" style="display: none;">
+                                <a href="#" class="btn border map">Показать на карте</a>
+                            </div>
+                            <div class="field-group width-xl">
+                                <input class="form-control" type="text" name="" placeholder="Адрес доставки (Улица, дом, подъезд, этаж, квартира)">
+                            </div>
+                            <div class="field-group width-xl">
+                                <textarea class="form-control" name="" placeholder="Ваш комментарий"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 class="title size-18"><span class="num">3.</span>Способ оплаты</h4>
+                            <div class="form-group">
+                                <div class="field-group">
+                                    <input class="field-radio" type="radio" id="payment-method2" name="payment-method">
+                                    <label for="payment-method2" class="field-radio-label">Картой онлайн на сайте</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--end order-data-form-->
+
+                    <!--payment-block-->
+                    <div class="payment-wrapper">
+                        <span class="text bold-24">Ваш заказ:</span>
+                        <div class="flex-block between">
+                            <span class="text">Вещи</span>
+                            <span class="dotted-line"></span>
+                            <span class="text green bold-16">2800₽</span>
+                        </div>
+                        <div class="flex-block between width-prompt">
+                            <span class="text">Залог</span>
+                            <span class="dotted-line"></span>
+                            <span class="text green bold-16">4000₽</span>
+                            <div class="prompt" data-text="Информация о том, что такое залог и как он работает"></div>
+                        </div>
+                        <div class="flex-block between">
+                            <span class="text bold-24">Итого</span>
+                            <span class="text green bold-24">6420₽</span>
+                        </div>
+                        <a href="#" class="btn size-medium green">Оплатить заказ</a>
+                        <span class="text size-12">Нажимая на кнопку я соглашаюсь на обработку <a href="#" class="text size-12 green">персональных данных</a></span>
+                        <div class="flex-block between">
+                            <img src="img/google_pay.png" class="pay-img" alt="GooglePay"/>
+                            <img src="img/apple_pay.png" class="pay-img" alt="ApplePay"/>
+                            <img src="img/mastercard.png" class="pay-img" alt="MasterCard"/>
+                            <img src="img/visa.png" class="pay-img" alt="Visa"/>
+                            <img src="img/maestro.png" class="pay-img" alt="Maestro"/>
+                        </div>
+                    </div>
+                    <!--end payment-block-->
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</main>
+
+<!--footer-->
+<!--<footer id="footer">-->
+<!--    <div class="footer-top">-->
+<!--        <div class="wrapper">-->
+<!--            <nav class="menu-menyu-v-podvale-container"><ul id="footer-menu" class="footer-menu"><li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="http://rentclub-it.etoyasno.beget.tech/profile/">Мой аккаунт</a></li>-->
+<!--            <li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="http://rentclub-it.etoyasno.beget.tech/checkout/">Оформление заказа</a></li>-->
+<!--            <li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="http://rentclub-it.etoyasno.beget.tech/cart/">Корзина</a></li>-->
+<!--            <li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-162"><a href="http://rentclub-it.etoyasno.beget.tech/catalog/">Каталог</a></li>-->
+<!--            <li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="http://rentclub-it.etoyasno.beget.tech/sample-page/">Sample Page</a></li>-->
+<!--            </ul></nav>        -->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="footer-bottom">-->
+<!--        <div class="wrapper">-->
+<!--            <div class="footer-bottom-block">-->
+<!--                <div class="footer-data">-->
+<!--                    <a href="http://rentclub-it.etoyasno.beget.tech/" class="logo" title="rentclub" rel="home">-->
+<!--                        <img src="img/svg/logo.svg" alt="">-->
+<!--                    </a>-->
+<!--                    <a class="phone" href="tel:88005003060">8-800-500-30-60</a>-->
+<!--                    <a class="email" href="mailto:hello@example.com">hello@example.com</a>-->
+<!--                    <div class="social">-->
+<!--                        <a href="1" class="instagram" target="_blank"></a>-->
+<!--                        <a href="2" class="youtube" target="_blank"></a>-->
+<!--                        <a href="tg://resolve?domain=kllmngr" class="telegram" target="_blank"></a>-->
+<!--                        <a href="https://wa.me/79994603055" class="whatsapp" target="_blank"></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="footer-catalog">-->
+<!--                    <nav>-->
+<!--                        <div class="catalog-title">Каталог</div>-->
+<!--                        <ul class="footer-catalog-list">-->
+<!--                            <li><a href="http://rentclub-it.etoyasno.beget.tech/catalog/sport/">Спорт и активный отдых</a></li>-->
+<!--                            <li><a href="http://rentclub-it.etoyasno.beget.tech/catalog/children-products/">Детские товары</a></li>-->
+<!--                            <li><a href="http://rentclub-it.etoyasno.beget.tech/catalog/hobbies/">Хобби и отдых</a></li>-->
+<!--                            <li><a href="http://rentclub-it.etoyasno.beget.tech/catalog/instruments/">Инструменты</a></li>-->
+<!--                            <li><a href="http://rentclub-it.etoyasno.beget.tech/catalog/clothing/">Одежда</a></li>-->
+<!--                            <li><a href="http://rentclub-it.etoyasno.beget.tech/catalog/event/">Для мероприятий</a></li>-->
+<!--                            <li><a href="http://rentclub-it.etoyasno.beget.tech/catalog/electronics/">Электроника</a></li>-->
+<!--                            <li><a href="http://rentclub-it.etoyasno.beget.tech/catalog/other/">Другие категории</a></li>-->
+<!--                        </ul>-->
+<!--                    </nav>-->
+<!--                </div>-->
+<!--                <div class="footer-additional-data">-->
+<!--                    <a href="#" class="h-rent-link btn border plus">Сдать в аренду</a>-->
+<!--                    <div class="requisites">-->
+<!--                        <div class="ooo">ООО “Информационные технологии”</div>-->
+<!--                        <div class="requisites-line">-->
+<!--                            <div class="inn">ИНН: 123451256 | </div>-->
+<!--                            <div class="kpp">КПП: 123546</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="payments">-->
+<!--                        <img src="http://rentclub-it.etoyasno.beget.tech/app/themes/etoyasno/source/img/svg/footer/googlePay.svg" alt="">-->
+<!--                        <img src="http://rentclub-it.etoyasno.beget.tech/app/themes/etoyasno/source/img/svg/footer/apay.svg" alt="">-->
+<!--                        <img src="http://rentclub-it.etoyasno.beget.tech/app/themes/etoyasno/source/img/svg/footer/master-card.svg" alt="">-->
+<!--                        <div class="break"></div>-->
+<!--                        <img src="http://rentclub-it.etoyasno.beget.tech/app/themes/etoyasno/source/img/svg/footer/visa.svg" alt="">-->
+<!--                        <img src="http://rentclub-it.etoyasno.beget.tech/app/themes/etoyasno/source/img/svg/footer/maestro.svg" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="dev">Разработка сайта: <a href="https://eto-yasno.ru" target="_blank">Это Ясно</a></div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+
+<script src="libs/jq/jquery.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

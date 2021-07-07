@@ -1,0 +1,33 @@
+# Application
+public_html/app/plugins/*
+!public_html/app/plugins/.gitkeep
+!public_html/app/plugins/woocommerce-bookings
+!public_html/app/plugins/advanced-custom-fields-pro
+public_html/app/mu-plugins/*/
+public_html/app/upgrade
+public_html/app/uploads/*
+!public_html/app/uploads/.gitkeep
+
+# WordPress
+public_html/wp
+public_html/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+.idea/
+.idea/*
+
+.sass-cache/
+.sass-cache/*
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml

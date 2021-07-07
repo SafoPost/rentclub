@@ -1,0 +1,86 @@
+{
+    "key": "group_605de2c1d1446",
+    "title": "SEO блок",
+    "fields": [
+        {
+            "key": "field_606aa6bcca77c",
+            "label": "SEO блок",
+            "name": "seo_block",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_606aa51f8b516",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_605de2c7e77e7",
+                    "label": "Текст",
+                    "name": "seo_text",
+                    "type": "wysiwyg",
+                    "instructions": "Тег More служит для разделения контента на открытую и скрытую часть, для правильного отображения тег More стоит оборачивать в абзац (т.е нажать перед ним и после него Enter). Если все правильно и если перейти во вкладку Текст, то тег будет отображаться так: \r\n&lt;p&gt;&lt;!--more--&gt;&lt;\/p&gt;",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "50"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "product_cat"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1617604041
+}

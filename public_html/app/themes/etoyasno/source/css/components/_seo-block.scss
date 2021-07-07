@@ -1,0 +1,16 @@
+.seo{
+  padding: 100px 0;
+  .seo-block{
+    font-size: 12px;
+    .hidden {
+      display: none;
+    }
+  }
+  .show-seo-block{
+    &.active{
+      &::after{
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
