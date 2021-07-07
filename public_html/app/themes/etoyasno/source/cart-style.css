@@ -49,8 +49,7 @@
     line-height: 44px;
 }
 .text.before-clock::before {
-    /* content: "\e94f"; */
-    content: "\e907";
+    content: "\e94f";
     font-size: 16px;
     margin-right: 10px;
     display: inline-block;
@@ -119,8 +118,7 @@
 }
 
 .btn.map::after {
-    /* content: "\e947"; */
-    content: "\e907";
+    content: "\e947";
     font-size: 16px;
     margin-left: 10px;
     display: inline-block;
