@@ -8,6 +8,7 @@
     margin-bottom: 78px;
 }
 
+/* text/title */
 .text {
     font-style: normal;
     font-weight: normal;
@@ -87,8 +88,9 @@
     margin-right: 16px;
     color: #1A8B32;
 }
+/* end - text/title */
 
-
+/* buttons */
 .btn.delete {
     position: relative;
     width: 28px;
@@ -137,9 +139,9 @@
 .btn.border.map::after {
     color: #1A8B32;
 }
+/* end - buttons */
 
-
-
+/* section/block settings */
 .flex-block {
     display: flex;
 }
@@ -153,7 +155,6 @@
 .flex-block.center {
     align-items: center;
 }
-
 
 .cart-section {
     padding: 0 0 80px;
@@ -179,8 +180,9 @@
 .page-cart-block .size-h3 {
     margin: 0
 }
+/* end - section/block settings */
 
-
+/* cart-title */
 .cart-title {
     display: flex;
     align-items: center;
@@ -190,8 +192,9 @@
 .cart-title h1{
     max-width: 150px;
 }
+/* end - cart-title */
 
-
+/* order-steps */
 .step-item {
     color: #BDBDBD;
     font-style: normal;
@@ -210,12 +213,13 @@
 }
 .step-item:not(.step-item:last-child)::after {
     position: absolute;
-    top: -1px;
+    top: -4px;
     content: "\e90a";
     margin-top: 5px;
     margin-left: 40px;
     display: inline-block;
     font-family: 'rentclub-icons' !important;
+    font-size: 23px;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -242,13 +246,11 @@
 .step-item + .step-item {
     margin-left: 104px;
 }
+/* end - order-steps */
 
-.cart-form {
-    width: 100%;
-}
 
+/* order-table */
 .order-table {
-    /* table-layout: fixed; */
     width: 100%;
     border-collapse: collapse;
 }
@@ -272,8 +274,9 @@
 .order-table td:last-child {
     padding: 24px 17px 24px 0;
 }
+/* end - order-table */
 
-
+/* end - order-table-content */
 .order-photo {
     width: 160px;
     height: 160px;
@@ -311,7 +314,6 @@
     background-color: #1A8B32;
     color: white;
     border: 0;
-
 }
 .product-quantity input {
     height: 44px;
@@ -328,9 +330,9 @@
     justify-content: space-between;
     align-items: center;
 }
+/* end - order-table-content */
 
-
-
+/* form and form-fields */
 .cart-form-wrapper {
     margin-top: 48px;
     display: flex;
@@ -378,6 +380,7 @@
     flex: 0 1 124px;
 }
 
+
 .form-floating .form-control,
 .form-floating .form-control:focus,
 .form-floating .form-control:not(:placeholder-shown),
@@ -403,7 +406,6 @@
     background-color: #fff;
     color: #BDBDBD;
 }
-
 .form-floating .form-control ~ label {
     background-color: transparent;
     color: transparent;
@@ -412,6 +414,7 @@ input::placeholder, textarea::placeholder {
     color: #BDBDBD;
 }
 
+
 .field-radio {
     display: none;
 }
@@ -419,7 +422,6 @@ input::placeholder, textarea::placeholder {
     position: relative;
     padding-left: 24px;
     cursor: pointer;
-    /* vertical-align: bottom; */
 }
 .field-radio-label::before {
     position: absolute;
@@ -451,6 +453,7 @@ input::placeholder, textarea::placeholder {
     box-sizing: border-box;
     border-radius: 50%;
 }
+
 
 .field-checkbox {
     display: none;
@@ -492,12 +495,12 @@ input::placeholder, textarea::placeholder {
     border-left: 3px solid #FFFFFF;
     transform: translateY(-6px) rotate(-45deg);
 }
-
-
 .form-control.height-55 {
     height: 55px;
 }
+/* end - form and form-fields */
 
+/* payment-wrapper */
 .payment-wrapper {
     width: 376px;
     height: min-content;
@@ -530,10 +533,10 @@ input::placeholder, textarea::placeholder {
 .payment-wrapper .prompt {
     right: -25px;
 }
+/* end - payment-wrapper */
 
-
+/* cart-step-2 */
 .cart-step-2 {
-    /* padding-top: 48px; */
     border-top: 1px solid #E0E0E0;
 }
 .cart-step-2 .text-block {
@@ -546,7 +549,9 @@ input::placeholder, textarea::placeholder {
 .cart-step-2 .text-block .text {
     margin-bottom: 18px;
 }
+/* end - cart-step-2 */
 
+/* cart-step-3 */
 .cart-step-3 {
     padding-top: 22px;
 }
@@ -564,9 +569,9 @@ input::placeholder, textarea::placeholder {
 .cart-step-3 .cart-form-wrapper .form-group.width-l {
     flex: 0 2 354px;
 }
+/* end - cart-step-3 */
 
-
-
+/* green circle with check */
 .green-circle {
     position: relative;
     width: 64px;
@@ -599,3 +604,4 @@ input::placeholder, textarea::placeholder {
     transform: rotate(-45deg);
     border-radius: 5px;
 }
+/* end - green circle with check */
