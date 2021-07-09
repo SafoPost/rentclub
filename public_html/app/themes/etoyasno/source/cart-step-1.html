@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="cart-style.css">
 
     <title>Rent Club</title>
 </head>
@@ -66,7 +65,7 @@
     <div class="wrapper">
         <section class="cart-section">
             <div class="cart-title">
-                <h1 class="quadrate green size-h2">Корзина</h1>
+                <h2 class="quadrate green size-h2">Корзина</h2>
 
                 <!--cart-steps-block-->
                 <div class="step-group">
@@ -76,7 +75,7 @@
                 </div>
                 <!--end cart-steps-block-->
             </div>
-        
+
             <div class="page-cart-block" id="cart-step-1">
                 <!--order-table-->
                 <table class="order-table">
@@ -93,7 +92,7 @@
                         </td>
                         <td>
                             <div class="order-description">
-                                <span>Аренда детского автокресла Britax Romer Advansafix IV Rдо 36 кг от 0,9 до 12 лет</span>
+                                <p>Аренда детского автокресла Britax Romer Advansafix IV Rдо 36 кг от 0,9 до 12 лет</p>
                             </div>
                         </td>
                         <td>
@@ -107,9 +106,9 @@
                         </td>
                         <td>
                             <div class="product-quantity">
-                                <button class="quantity-btn minus">-</button>
+                                <button class="quantity-btn count-minus">-</button>
                                 <input type="text" value="1">
-                                <button class="quantity-btn">+</button>
+                                <button class="quantity-btn count-plus">+</button>
                             </div>
                         </td>
                         <td>
@@ -130,49 +129,60 @@
                     <form method="post" action="" class="cart-form">
                         <div class="form-group">
                             <h4 class="title size-18"><span class="num">1.</span>Ваши контактные данные</h4>
-                            <div class="field-group width-s form-floating">
-                                <input class="form-control" type="text" id="contact-details-surname" name="" placeholder="Фамилия*">
-                                <label for="contact-details-surname">Ваша фамилия</label>
+                            <div class="field-row">
+                                <div class="field-group width-s form-floating">
+                                    <input class="form-control" type="text" id="contact-details-surname" name="" placeholder="Фамилия*">
+                                    <label for="contact-details-surname">Ваша фамилия</label>
+                                </div>
+                                <div class="field-group width-s form-floating">
+                                    <input class="form-control" type="text" id="contact-details-name" name="contact-details-name" placeholder="Имя*">
+                                    <label for="contact-details-name">Ваше имя</label>
+                                </div>
+                                <div class="field-group width-s form-floating">
+                                    <input class="form-control" type="text" id="contact-details-patronymic" name="contact-details-patronymic" placeholder="Отчество*">
+                                    <label for="contact-details-patronymic">Ваше отчество</label>
+                                </div>
                             </div>
-                            <div class="field-group width-s form-floating">
-                                <input class="form-control" type="text" id="contact-details-name" name="contact-details-name" placeholder="Имя*">
-                                <label for="contact-details-name">Ваше имя</label>
-                            </div>
-                            <div class="field-group width-s form-floating">
-                                <input class="form-control" type="text" id="contact-details-patronymic" name="contact-details-patronymic" placeholder="Отчество*">
-                                <label for="contact-details-patronymic">Ваше отчество</label>
-                            </div>
-                            <div class="field-group width-m form-floating">
-                                <input class="form-control" type="text" id="contact-details-phone" name="contact-details-phone" placeholder="Телефон*">
-                                <label for="contact-details-phone">Ваш телефон</label>
-                            </div>
-                            <div class="field-group width-l form-floating">
-                                <input class="form-control" type="text" id="contact-details-email" name="contact-details-email" placeholder="Email">
-                                <label for="contact-details-email">Ваш email</label>
+                            <div class="field-row">
+                                <div class="field-group width-m form-floating">
+                                    <input class="form-control" type="text" id="contact-details-phone" name="contact-details-phone" placeholder="Телефон*">
+                                    <label for="contact-details-phone">Ваш телефон</label>
+                                </div>
+                                <div class="field-group width-m form-floating">
+                                    <input class="form-control" type="text" id="contact-details-email" name="contact-details-email" placeholder="Email">
+                                    <label for="contact-details-email">Ваш email</label>
+                                </div>
                             </div>
                             <span class="text size-12">* - поле обязательно к заполнению</span>
                         </div>
 
                         <div class="form-group">
                             <h4 class="title size-18"><span class="num">2.</span>Выберите способ доставки</h4>
-                            <div class="field-group">
+
+                            <div class="field-group form-check">
                                 <input class="field-radio" type="radio" id="delivery-method1" name="delivery-method">
                                 <label for="delivery-method1" class="field-radio-label">Самовывоз</label>
                             </div>
-                            <div class="field-group">
+                            <div class="field-group form-check">
                                 <input class="field-radio" type="radio" id="delivery-method2" name="delivery-method">
-                                <label for="delivery-method2" class="field-radio-label">Доставкой курьером</label>
+                                <label for="delivery-method2" class="field-radio-label">
+                                    Доставкой курьером
+                                </label>
                             </div>
-                            <div class="field-group width-l" style="display: none;">
-                                <input class="form-control height-55" type="text" name="">
+
+                            <div class="field-row" style="display: none;">
+                                <div class="field-group width-m">
+                                    <input class="form-control height-55" type="text" name="">
+                                </div>
+                                <div class="field-group width-m">
+                                    <a href="#" class="btn border map">Показать на карте</a>
+                                </div>
                             </div>
-                            <div class="field-group width-m" style="display: none;">
-                                <a href="#" class="btn border map">Показать на карте</a>
-                            </div>
-                            <div class="field-group width-xl">
+
+                            <div class="field-group width-l">
                                 <input class="form-control" type="text" name="" placeholder="Адрес доставки (Улица, дом, подъезд, этаж, квартира)">
                             </div>
-                            <div class="field-group width-xl">
+                            <div class="field-group width-l">
                                 <textarea class="form-control" name="" placeholder="Ваш комментарий"></textarea>
                             </div>
                         </div>
@@ -180,7 +190,7 @@
                         <div class="form-group">
                             <h4 class="title size-18"><span class="num">3.</span>Способ оплаты</h4>
                             <div class="form-group">
-                                <div class="field-group">
+                                <div class="field-group form-check">
                                     <input class="field-radio" type="radio" id="payment-method2" name="payment-method">
                                     <label for="payment-method2" class="field-radio-label">Картой онлайн на сайте</label>
                                 </div>
@@ -222,7 +232,6 @@
             </div>
         </section>
     </div>
-    
 </main>
 
 <!--footer-->
@@ -294,6 +303,7 @@
 
 <script src="libs/jq/jquery.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
+<script src="js/counter.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

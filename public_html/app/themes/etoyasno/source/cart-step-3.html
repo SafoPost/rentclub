@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="cart-style.css">
 
     <title>Rent Club</title>
 </head>
@@ -65,7 +64,7 @@
     <div class="wrapper">
         <section class="cart-section">
             <div class="cart-title">
-                <h1 class="quadrate green size-h2">Корзина</h1>
+                <h2 class="quadrate green size-h2">Корзина</h2>
 
                 <!--cart-steps-block-->
                 <div class="step-group">
@@ -80,7 +79,7 @@
                 <div class="cart-form-wrapper">
                     <!--order-payment-->
                     <div class="text-block">
-                        <span class="text bold-24">Оплата заказа</span>
+                        <h1 class="text bold-24">Оплата заказа</h1>
                         <span class="text bold-16 green before-clock">Заказ необходимо оплатить в течение 00:00 минут</span>
                         <p class="text">Мы не получили от вас оплату в течение 20 минут, поэтому отменили заказ</p>
                         <a href="#" class="btn size-medium green">Оплатить заказ</a>
@@ -93,7 +92,7 @@
                 <div class="cart-form-wrapper">
                     <!--passport-data-text-->
                     <div class="text-block">
-                        <h4 class="form-title">Паспортные данные</h4>
+                        <h1 class="text bold-24">Паспортные данные</h1>
                         <span>Заказ необходимо оплатить в течение 20:00 минут</span>
                         <p>Мы стараемся сделать прозрачной сферу аренды как для Арендодателя так и для Арендатора, поэтому при оформлении заказа просим у вас паспортные данные. С помощью этих данных мы сформируем для вас договор аренды, акт према передачи и акт возврата, эти документы будет иметь юридическую силу</p>
                         <p>Вы можете не предоставлять паспортные данные, в этом случае мы отменим заказ в течение 24-х часов с момента создания заказа и вернем вам деньги</p>
@@ -105,29 +104,40 @@
                         <div class="form-group">
                             <h4 class="form-title">Введите ваши данные, как в паспорте</h4>
                             <span class="text size-12 green">Все поля обязательны к заполнению</span>
-                            <div class="field-group width-s form-floating">
-                                <input class="form-control" type="text" id="passport-data-surname" name="passport-data-surname" placeholder="Фамилия">
-                                <label for="passport-data-surname">Ваша фамилия</label>
+                            <div class="field-row">
+                                <div class="field-group width-s form-floating">
+                                    <input class="form-control" type="text" id="passport-data-surname" name="passport-data-surname" placeholder="Фамилия">
+                                    <label for="passport-data-surname">Ваша фамилия</label>
+                                </div>
+                                <div class="field-group width-s form-floating">
+                                    <input class="form-control" type="text" id="passport-data-name" name="passport-data-name" placeholder="Имя">
+                                    <label for="passport-data-name">Ваше имя</label>
+                                </div>
+                                <div class="field-group width-s form-floating">
+                                    <input class="form-control" type="text" id="passport-data-patronymic" name="passport-data-patronymic" placeholder="Отчество">
+                                    <label for="passport-data-patronymic">Ваше отчество</label>
+                                </div>
                             </div>
-                            <div class="field-group width-s form-floating">
-                                <input class="form-control" type="text" id="passport-data-name" name="passport-data-name" placeholder="Имя">
-                                <label for="passport-data-name">Ваше имя</label>
+                            <div class="field-row flex-25">
+                                <div class="field-group width-m">
+                                    <span class="text">Дата рождения:</span>
+                                </div>
                             </div>
-                            <div class="field-group width-s form-floating">
-                                <input class="form-control" type="text" id="passport-data-patronymic" name="passport-data-patronymic" placeholder="Отчество">
-                                <label for="passport-data-patronymic">Ваше отчество</label>
+                            <div class="field-row">
+                                <div class="field-group width-xs">
+                                    <input class="form-control" type="text" name="" placeholder="10 февраля 1993">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <span class="text">Дата рождения:</span>
-                            <div class="field-group width-xs">
-                                <input class="form-control" type="text" name="" placeholder="10 февраля 1993">
+
+                            <div class="field-row">
+                                <div class="field-group width-m">
+                                    <span class="text">Серия и номер паспорта</span>
+                                </div>
+                                <div class="field-group width-m">
+                                    <span class="text">Дата выдачи</span>
+                                </div>
                             </div>
-                        </div>
-    
-                        <div class="flex-block">
-                            <div class="form-group width-l">
-                                <span class="text">Серия и номер паспорта</span>
+                            <div class="field-row">
                                 <div class="field-group width-xxs form-floating">
                                     <input class="form-control" type="text" id="passport-data-series" name="passport-data-series" placeholder="Серия">
                                     <label for="passport-data-series">Серия</label>
@@ -136,18 +146,16 @@
                                     <input class="form-control" type="text" id="passport-data-number" name="passport-data-number" placeholder="Номер">
                                     <label for="passport-data-number">Номер</label>
                                 </div>
-                            </div>
-                            <div class="form-group width-xs">
-                                <span class="text">Дата выдачи</span>
+
                                 <div class="field-group width-xs">
                                     <input class="form-control" type="text" name="" placeholder="10 февраля 1993">
                                 </div>
                             </div>
                         </div>
-                        <di class="flex-block mb-28">
+                        <div class="flex-block mb-28 form-check">
                             <input class="field-checkbox" type="checkbox" id="correct-data" name="correct-data">
                             <label for="correct-data" class="field-checkbox-label">Паспортные данные верны</label>
-                        </di>
+                        </div>
                         <div class="flex-block between mb-28">
                             <span class="text size-12 gray">Нажимая на кнопку я соглашаюсь на обработку <a class="text size-12 green">персональных данных</a></span>
                             <a href="#" class="btn size-medium green">Завершить оформление</a>
