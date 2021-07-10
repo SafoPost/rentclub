@@ -17,20 +17,20 @@
   &.size-14 {
     @include size-regular(small);
   }
-  // .size-18 {
-  //     font-size: 18px;
-  // }
+  &.size-16 {
+    @include size-regular(medium);
+  }
   &.label {
     @include size-title(label);
   }
   &.bold-16 {
-    @include size-regular(h2);
+    @include size-regular(bold);
   }
   &.bold-24 {
     @include size-title(h3);
   }
   &.bold-32 {
-    @include size-title(bord);
+    @include size-title(h2);
   }
   &.before-clock::before {
     content: "\e94f";
@@ -57,6 +57,12 @@
   }
   &.gray {
     color: $gray;
+  }
+  &.underline {
+    text-decoration: underline;
+  }
+  &.center {
+    text-align: center;
   }
 }
 
@@ -134,11 +140,10 @@
 .cart-section {
   padding: 0 0 80px;
 }
-.cart-section .cart-title h1{
-  margin: 0;
-}
-.page-cart.empty .wrapper {
-  padding: 0 123px;
+.page-cart.width-1024 {
+  .wrapper {
+    padding: 0 123px;
+  }
 }
 .page-cart-block {
   width: 100%;
@@ -333,6 +338,9 @@
   margin-right: 16px;
 }
 
+.field-group.width-full {
+  width: 100%
+}
 .field-group.width-l {
   width: calc(100% - 92px);
 }
@@ -392,6 +400,10 @@ input::placeholder, textarea::placeholder, select::placeholder {
   .prompt {
     top: -1px;
     right: -25px;
+    &::after {
+      right: -100%;
+      transform: translateY(-50%) translateX(100%);
+    }
   }
 }
 /* end - payment-wrapper */
@@ -417,7 +429,11 @@ input::placeholder, textarea::placeholder, select::placeholder {
   padding-top: 22px;
   .text-block {
     width: 482px;
+    &.full-width {
+      width: 100%;
+    }
   }
+
   .cart-form-wrapper {
     display: flex;
     justify-content: space-between;

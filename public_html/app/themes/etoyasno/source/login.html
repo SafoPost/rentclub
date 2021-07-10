@@ -1,0 +1,101 @@
+<div class="modal show">
+
+    <!--start-login-->
+    <div class="modal-block" style="display: none;">
+        <button class="close"></button>
+
+        <h3 class="modal-header">Войдите или&nbsp;зарегистрируйтесь, чтобы&nbsp;продолжить</h3>
+
+        <form action="" class="login-form">
+            <div class="form-group">
+                <div class="field-group form-floating">
+                    <input class="form-control" type="text" id="login-code-phone" name="login-code-phone" placeholder="Телефон*">
+                    <label for="login-code-phone">Ваш телефон</label>
+                </div>
+            </div>
+            <a href="#" class="btn size-medium green">Получить код</a>
+
+            <a class="text size-16 green underline">Войти с&nbsp;помощью пароля</a>
+
+            <span class="text size-14 gray center">
+                Нажимая на&nbsp;кнопку я&nbsp;соглашаюсь на&nbsp;обработку
+                <a class="text size-14 green">персональных&nbsp;данных</a>
+            </span>
+        </form>
+
+    </div>
+    <!--end start-login-->
+
+    <!--login-with-phone-code-modal-->
+    <div class="modal-block" style="display: none;">
+        <button class="close"></button>
+
+        <h3 class="modal-header">Введите код</h3>
+
+        <form action="" class="login-form">
+
+            <div class="flex-block column center">
+                <p class="text label">Мы отправили код на номер</p>
+                <p class="text bold-16">+7 (999) 888-54-56</p>
+            </div>
+            <div class="flex-block column center">
+                <a class="text size-16 green underline">Изменить</a>
+                <p class="text size-14 gray center">Это нужно для того, чтобы мы корректно отобразили ваши предыдущие заказыи и&nbsp;учли&nbsp;баллы на&nbsp;бонусный&nbsp;счет</p>
+            </div>
+
+            <div class="form-group">
+                <div class="field-group phone-code">
+                    <input class="form-control" type="text" name="code-phone" maxlength="1" placeholder="8">
+                    <input class="form-control" type="text" name="code-phone" maxlength="1" placeholder="8">
+                    <input class="form-control" type="text" name="code-phone" maxlength="1" placeholder="8">
+                    <input class="form-control" type="text" name="code-phone" maxlength="1" placeholder="8">
+                </div>
+            </div>
+
+            <span class="text size-14">
+                    Новый код можно получить через
+                    <span class="phone-code-counter"> 60 </span>
+                    сек.
+                </span>
+            <a class="text size-16 green underline">Войти с&nbsp;помощью пароля</a>
+        </form>
+    </div>
+    <!--end login-with-phone-code-modal-->
+
+    <!--login-with-password-modal-->
+    <div class="modal-block">
+        <button class="close"></button>
+
+        <h3 class="modal-header">Войдите с&nbsp;помощью&nbsp;пароля</h3>
+        <p class="text label center">Только для зарегистрированных пользователей</p>
+
+        <form action="" class="login-form">
+            <div class="form-group">
+                <div class="field-group form-floating">
+                    <input class="form-control" type="text" id="login-phone" name="login-phone" placeholder="Ваш телефон">
+                    <label for="login-phone">Ваш телефон</label>
+                </div>
+                <div class="field-group form-floating">
+                    <input class="form-control" type="text" id="login-password" name="login-password" placeholder="Ваш пароль">
+                    <label for="login-password">Ваш пароль</label>
+                </div>
+            </div>
+
+            <div class="flex-block width-prompt">
+                <span class="text size-14">Мы присылали вам пароль в&nbsp;смс при&nbsp;регистрации</span>
+                <div class="prompt" data-text="Информация"></div>
+            </div>
+
+            <a href="#" class="btn size-medium green">Получить код</a>
+
+            <a class="text size-16 green underline">Войти с&nbsp;помощью пароля</a>
+
+            <span class="text size-14 gray center">
+                    Нажимая на&nbsp;кнопку я&nbsp;соглашаюсь на&nbsp;обработку
+                    <a class="text size-14 green">персональных&nbsp;данных</a>
+                </span>
+        </form>
+    </div>
+    <!--end login-with-password-modal-->
+
+</div>

@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="cart-style.css">
 
     <title>Rent Club</title>
 </head>
 <body>
 
+<!--header-->
 <!--<header id="header">-->
 <!--    <div class="wrapper">-->
 <!--        <div class="header-top">-->
@@ -46,126 +48,63 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</header>-->
+<!--end header-->
 
-<!--<div class="breadcrumbs">-->
-<!--    <div class="wrapper">-->
-<!--        <nav id="breadcrumbs">-->
-<!--            <span><span>-->
-<!--                <a href="http://rentclub-it.etoyasno.beget.tech/">Главная</a> &gt; <span class="breadcrumb_last" aria-current="page">Корзина</span>-->
-<!--            </span></span>-->
-<!--        </nav>        -->
+<main class="page-cart empty">
+    
+    <!--breadcrumbs-->
+<!--    <div class="breadcrumbs">-->
+<!--        <div class="wrapper">-->
+<!--            <nav id="breadcrumbs">-->
+<!--                <span><span>-->
+<!--                    <a href="http://rentclub-it.etoyasno.beget.tech/">Главная</a> &gt; <span class="breadcrumb_last" aria-current="page">Корзина</span>-->
+<!--                </span></span>-->
+<!--            </nav>-->
+<!--        </div>-->
 <!--    </div>-->
-<!--</div>-->
+    <!--end breadcrumbs-->
 
-<!--header-->
-<!--breadcrumbs-->
-
-<main class="page-cart">
     <div class="wrapper">
-        <section class="cart-section">
-            <div class="cart-title">
+        <section class="contacts-section">
+            <div class="contacts-title">
                 <h2 class="quadrate green size-h2">Корзина</h2>
-
-                <!--cart-steps-block-->
-                <div class="step-group">
-                    <span class="step-item completed"><span class="step-num"><span>1</span></span>Формирование заказа</span>
-                    <span class="step-item completed"><span class="step-num"><span>2</span></span>Оплата заказа</span>
-                    <span class="step-item current"><span class="step-num"><span>3</span></span>Паспортные данные</span>
-                </div>
-                <!--end cart-steps-block-->
             </div>
 
-            <div class="page-cart-block cart-step-3" id="cart-step-3-0" style="display: none;">
-                <div class="cart-form-wrapper">
-                    <!--order-payment-->
-                    <div class="text-block full-width">
-                        <p class="text bold-16">Мы отменили заказ</p>
-                        <p class="text">Поскольку мы не получили от вас в течение 24-х часов ваши паспортные данные, то мы отменили заказ</p>
-                        <a href="#" class="btn size-medium green">Перейти в каталог</a>
-                    </div>
-                    <!--end order-payment-->
+            <div class="page-contacts-block">
+                <p class="text">Наша служба поддержки работает 24/7, если у вас возникли вопросы или какие-то сложности при использовании нашего сервиса то смело пишите или звоните нам</p>
+                <div class="flex-block mb-44">
+                    <a href="tel:8(800)300-50-60" class="contact-link phone">8 (800) 300-50-60</a>
+                    <a href="mailto:hello@example.com" class="contact-link email">hello@example.com</a>
                 </div>
-            </div>
 
-            <div class="page-cart-block cart-step-3" id="cart-step-3">
-                <div class="cart-form-wrapper">
-                    <!--passport-data-text-->
-                    <div class="text-block">
-                        <h1 class="text bold-24">Паспортные данные</h1>
-                        <p class="text bold-16 before-clock green">Заказ необходимо оплатить в течение 20:00 минут</p>
-                        <p class="text">Мы стараемся сделать прозрачной сферу аренды как для Арендодателя так и для Арендатора, поэтому при оформлении заказа просим у вас паспортные данные. С помощью этих данных мы сформируем для вас договор аренды, акт према передачи и акт возврата, эти документы будет иметь юридическую силу</p>
-                        <p>Вы можете не предоставлять паспортные данные, в этом случае мы отменим заказ в течение 24-х часов с момента создания заказа и вернем вам деньги</p>
+                <h1 class="size-h2">Напишите нам</h1>
+                <form action="" class="contact-form">
+                    <div class="form-group">
+                        <div class="field-row">
+                            <div class="field-group width-m form-floating">
+                                <input class="form-control" type="text" id="contact-details-phone" name="contact-details-phone" placeholder="Телефон*">
+                                <label for="contact-details-phone">Ваш телефон</label>
+                            </div>
+                            <div class="field-group width-m form-floating">
+                                <input class="form-control" type="text" id="contact-details-email" name="contact-details-email" placeholder="Email">
+                                <label for="contact-details-email">Ваш email</label>
+                            </div>
+                        </div>
+                        <div class="field-row">
+                            <div class="field-group">
+                                <textarea class="form-control" name="" placeholder="Ваш комментарий"></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <!--end passport-data-text-->
-
-                    <!--passport-data-form-->
-                    <form method="post" action="" class="cart-form">
-                        <div class="form-group">
-                            <h4 class="form-title">Введите ваши данные, как в паспорте</h4>
-                            <span class="text size-12 green">Все поля обязательны к заполнению</span>
-                            <div class="field-row">
-                                <div class="field-group width-s form-floating">
-                                    <input class="form-control" type="text" id="passport-data-surname" name="passport-data-surname" placeholder="Фамилия">
-                                    <label for="passport-data-surname">Ваша фамилия</label>
-                                </div>
-                                <div class="field-group width-s form-floating">
-                                    <input class="form-control" type="text" id="passport-data-name" name="passport-data-name" placeholder="Имя">
-                                    <label for="passport-data-name">Ваше имя</label>
-                                </div>
-                                <div class="field-group width-s form-floating">
-                                    <input class="form-control" type="text" id="passport-data-patronymic" name="passport-data-patronymic" placeholder="Отчество">
-                                    <label for="passport-data-patronymic">Ваше отчество</label>
-                                </div>
-                            </div>
-                            <div class="field-row flex-25">
-                                <div class="field-group width-m">
-                                    <span class="text">Дата рождения:</span>
-                                </div>
-                            </div>
-                            <div class="field-row">
-                                <div class="field-group width-xs">
-                                    <input class="form-control" type="text" name="" placeholder="10 февраля 1993">
-                                </div>
-                            </div>
-
-                            <div class="field-row">
-                                <div class="field-group width-m">
-                                    <span class="text">Серия и номер паспорта</span>
-                                </div>
-                                <div class="field-group width-m">
-                                    <span class="text">Дата выдачи</span>
-                                </div>
-                            </div>
-                            <div class="field-row">
-                                <div class="field-group width-xxs form-floating">
-                                    <input class="form-control" type="text" id="passport-data-series" name="passport-data-series" placeholder="Серия">
-                                    <label for="passport-data-series">Серия</label>
-                                </div>
-                                <div class="field-group width-s form-floating">
-                                    <input class="form-control" type="text" id="passport-data-number" name="passport-data-number" placeholder="Номер">
-                                    <label for="passport-data-number">Номер</label>
-                                </div>
-
-                                <div class="field-group width-xs">
-                                    <input class="form-control" type="text" name="" placeholder="10 февраля 1993">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex-block mb-28 form-check">
-                            <input class="field-checkbox" type="checkbox" id="correct-data" name="correct-data">
-                            <label for="correct-data" class="field-checkbox-label">Паспортные данные верны</label>
-                        </div>
-                        <div class="flex-block between mb-28">
-                            <span class="text size-12 gray">Нажимая на кнопку я соглашаюсь на обработку <a class="text size-12 green">персональных данных</a></span>
-                            <a href="#" class="btn size-medium green">Завершить оформление</a>
-                        </div>
-                        <span class="text size-14 before-lock">Ваши паспортные данные хранятся в безопасности и вы в любое время можете их удалить или изменить в личном кабинете</span>
-                    </form>
-                    <!--passport-data-form-->
-                </div>
+                    <div class="flex-block between">
+                        <span class="text size-12 gray w-320">Нажимая на кнопку я соглашаюсь на обработку <a class="text size-12 green">персональных данных</a></span>
+                        <a href="#" class="btn size-medium green">Отправить</a>
+                    </div>
+                </form>
             </div>
         </section>
     </div>
+    
 </main>
 
 <!--footer-->

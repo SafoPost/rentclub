@@ -1,0 +1,62 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .modal-header {
+    max-width: 340px;
+  }
+  .form-group {
+    flex-wrap: wrap;
+  }
+  & > *:not(*:last-child) {
+    margin-bottom: 24px;
+  }
+  a {
+    cursor: pointer;
+  }
+  .flex-block.column {
+    max-width: 340px;
+    &:not(.flex-block.column:last-child) {
+      margin-bottom: 24px;
+    }
+    margin-bottom: 16px;
+    & > *:not(*:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  .field-group {
+    width: 100%;
+    margin-right: 0;
+    &:first-child {
+      margin-bottom: 24px;
+    }
+    &.phone-code {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        max-width: 44px;
+        text-align: center;
+        & + input {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+  .width-prompt {
+    position: relative;
+    width: 100%;
+    & > .text {
+      max-width: 235px;
+    }
+  }
+  .prompt {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    &::after {
+      right: -100%;
+      transform: translateY(-50%) translateX(100%);
+    }
+  }
+}
